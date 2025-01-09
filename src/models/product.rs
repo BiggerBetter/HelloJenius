@@ -1,3 +1,6 @@
+use crate::traits::display::Display;
+
+#[derive(Clone)]
 pub struct Product {
     pub name: String,
     pub price: f64,
@@ -10,8 +13,10 @@ impl Product {
             price,
         }
     }
+}
 
-    pub fn info(&self) -> String {
+impl Display for Product {
+    fn info(&self) -> String {
         format!("Product: {}, Price: ${:.2}", self.name, self.price)
     }
 }

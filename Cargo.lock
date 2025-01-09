@@ -3,13 +3,6 @@
 version = 3
 
 [[package]]
-name = "HelloJenius"
-version = "0.1.0"
-dependencies = [
- "image",
-]
-
-[[package]]
 name = "adler2"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -155,6 +148,13 @@ checksum = "6dd08c532ae367adf81c312a4580bc67f1d0fe8bc9c460520283f4c0ff277888"
 dependencies = [
  "cfg-if",
  "crunchy",
+]
+
+[[package]]
+name = "hello_jenius"
+version = "0.1.0"
+dependencies = [
+ "image",
 ]
 
 [[package]]
